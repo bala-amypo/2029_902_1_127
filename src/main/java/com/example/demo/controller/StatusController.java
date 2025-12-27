@@ -12,13 +12,13 @@ import java.util.Map;
 @RequestMapping("/api/status")
 public class StatusController {
     
-    @GetMapping
-    public ResponseEntity<ApiResponse<Map<String, String>>> getStatus() {
-        Map<String, String> status = Map.of(
-            "status", "UP",
-            "service", "Complaint Prioritization Engine",
-            "version", "1.0"
-        );
-        return ResponseEntity.ok(ApiResponse.success("Service status retrieved successfully", status));
-    }
-}
+        @GetMapping
+            public ResponseEntity<ApiResponse<Map<String, String>>> getStatus() {
+                    Map<String, String> status = Map.of(
+                                "status", "UP",
+                                            "service", "Complaint Prioritization Engine",
+                                                        "version", "1.0"
+                                                                );
+                                                                        return ResponseEntity.ok(ApiResponse.success("Service status retrieved successfully", status));
+                                                                            }
+                                                                            }
